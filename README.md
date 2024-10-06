@@ -13,6 +13,15 @@ Social Plugins
 
 ## Website 
 
+![Home Page](module 7/Output Screenshots/Index page.png)
+![About Us Page](module 7/Output Screenshots/Aboutus page.png)
+![Sign Up Page](module 7/Output Screenshots/SignUp page.png)
+![Categories-tops Page](module 7/Output Screenshots/Categories_Tops page.png)
+![Categories-latest collection Page](module 7/Output Screenshots/Categories_LatestCollection page.png)
+![FAQ Page](module 7/Output Screenshots/FAQ page.png)
+![Contact Us Page](module 7/Output Screenshots/ContactUs_page.png)
+
+
 ## Running the Bootstrap Webpage Locally
 
 ### Prerequisites
@@ -27,5 +36,6 @@ Social Plugins
 2. **Open the HTML File**:
    - Locate the main HTML file (e.g., index.html) and open it in your web browser.
 
-###Note 
+##Note 
 Some Webpages in the categories section are not implemented
+The Directory might look messy as I missed creating a folder for all my images. You may make one and change the respective paths in the code.
