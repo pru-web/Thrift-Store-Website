@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href ="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href ="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href = "font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>My webpage</title>
+</head>
+<style>
+    body{
+        margin-bottom:60px;
+        margin-left:80px;
+        background-color: #333; /* Set background color to dark */
+        color: #fff;
+        margin-top:70px;
+    }
+    .rounded-image{
+        border-radius :50%;
+        margin-right: 2px;
+
+    } 
+    .custom-navbar-brand{
+        display: flex;
+        align-items: center;
+    }
+    .custom-brand-text{
+        font-size: 12px;
+        color: pink; 
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+        font-weight: bold; 
+        margin-left: 5px; 
+    }
+    .btn-custom {
+        background-color: pink;
+        border-color: pink;
+        color: grey !important;
+    }
+    #map-container{
+        height:400px;
+    }
+
+</style>
+<!--navbar-fixed-top used to fix the navbar, even when scrolling down the webpage, your nav bar will be visible-->
+<body>
+    <!--navbar-default: to have the background white-->
+    <nav class = "navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class ="navbar-toggle" data-target="#primary-menu" data-toggle="collapse">
+                    <!--menu-->
+                    <!--making the toggle icon-->
+                    <i class="icon-bar"></i>
+                    <i class="icon-bar"></i>
+                    <i class="icon-bar"></i>
+                </button>
+                <a class="navbar-brand custom-navbar-brand" href="#">
+                    <img src = "download.jpeg" alt="logo" class="rounded-image" width="40" height="40">
+                    <span class="custom-brand-text">CLOSET.PRU</span>
+                </a>
+            </div>
+            <!-- to make the navbar look good while screen in minimised, we collapse the navbar -->
+            <div class="collapse navbar-collapse" id="primary-menu">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="sign-up.html">Sign up</a></li>
+                    
+                    <!--making a dropdown menu on one of the nav bar sections-->
+                    <li class="dropdown">
+                        <!--<a href="categories.html">Categories</a> -->
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Categories
+                            <i class="caret"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="tops.html">Crops tops</a></li>
+                            <li><a href="bottoms.html">Bottoms</a></li>
+                            <li><a href="dresses.html">Dresses</a></li>
+                            <li><a href="skirts.html">Skirts</a></li>
+                            <li><a href="new-releases.html">Latest Collection</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 style="padding:15px;">We are here</h2>
+        <!--map section-->
+        <hr>
+        <div id="map-container"></div>
+
+        <div class="row">
+            <!--contact us section-->
+            <div class="col-md-6">
+                <h2 style="padding:15px;">Reach out to us here</h2>
+                <p style="padding:15px;">Sit tight! We shall respond within 3 working days</p>
+                <hr/>
+                <form class="form-horizontal">
+                    <!--giving 2 units for label-->
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="email">Email</label>
+                        <!--giving 6 units for the input box-->
+                        <div class="col-md-6">
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email..."/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="Question" >Email</label>
+                        <div class="col-md-6">
+                            <input type="text" name="question" id="question" class="form-control" placeholder="Enter your query..."/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-10 col-md-offset-2">
+                            <input type="reset" value="Reset" class="btn btn-default"/>
+                            <input type="submit" value="Submit" class="btn btn-custom"/>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>      
+
+    </div>
+
+    <br>
+
+        <!--making the social meadia handles section -->
+        <div class="well">
+            <style>
+                .social-media-menu{
+                    list-style-type: none;
+                    overflow: auto;
+                    padding: 0;
+                }
+                .social-media-menu >li{
+                    float:left;
+                    width: 30%;
+                    text-align:center;
+                }
+                .social-media-menu>li>a{
+                    font-size: 2em;
+                    color: gray; 
+                    text-decoration:none;
+                }
+
+
+            </style>
+            <ul class="social-media-menu">
+                <li><a href="https://www.instagram.com/closet.steal.in/"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.youtube.com/"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+
+
+    <footer class="text-center" style="margin-top:20px;">
+        Copy &copy; 2023 ClosetSteal.in, inc. All rights reserved.
+        
+        <a data-toggle="modal" href='#modal-tnc'>Terms and Condition</a>
+
+        <div class="modal fade" id="modal-tnc">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h2 class="modal-title">Terms and Condition</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Please read these conditions carefully before using the  website. By using the website, you signify your agreement to be bound by these conditions.
+
+                            In addition, when you use any current or future  service (eg. Wish List or Marketplace), you will also be subject to the terms, guidelines and conditions applicable to that  Service. ("Terms"). If these Conditions of Use are inconsistent with such Terms, the Terms will control.
+
+                            These "Conditions of Use" constitute an electronic record within the meaning of the applicable law. This electronic record is generated by a computer system and does not require any physical or digital signatures.
+
+                            Conditions Relating to Your Use of 
+                            Notice and Procedure for Making Claims of Infringement
+                            Notice and Procedure for Notifying  of Objectionable Content
+                        </p>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="https://maps.google.com/maps/api/js"></script>
+
+    <script>
+        //console.log( google);
+        //console.log( maps);
+
+        window.onload=function(){
+            var location = new google.maps.LatLng(18.4984199,73.9338602);
+            var map = new google.maps.Map(document.getElementById('map-container'),{
+                center: location,
+                zoom: 17
+            });
+
+            var marker = new google.maps.Marker({
+                position: location,
+                "map":map,
+                title:'Magarpatta City'
+            });
+
+            map.setMarker(marker);
+        };
+    </script>
+
+                                   
+    
+</body>
+</html>
